@@ -1,6 +1,6 @@
 # Tiltas Partners — Static Website
 
-**Lithuanian-US Market Entry Consultancy** — tiltausa.com
+**Lithuanian-US Market Entry Consultancy** — tiltasusa.com
 
 ## Project
 
