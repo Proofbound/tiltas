@@ -1,0 +1,35 @@
+<svg width="100%" viewBox="0 0 680 420" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>Tiltas Partners logo — Lithuanian flag with US-themed bridge</title>
+<desc>Lithuanian tricolor with a stylized suspension bridge in US red, white, and blue spanning the center.</desc>
+
+<!-- Lithuanian flag background bands -->
+<rect x="140" y="80" width="400" height="107" rx="0" fill="#FDB913"/>
+<rect x="140" y="187" width="400" height="106" rx="0" fill="#006A44"/>
+<rect x="140" y="293" width="400" height="107" rx="0" fill="#C1272D"/>
+
+<!-- Round the top corners of yellow band -->
+<rect x="140" y="80" width="400" height="107" rx="12" fill="#FDB913"/>
+<rect x="140" y="120" width="400" height="67" rx="0" fill="#FDB913"/>
+
+<!-- Round the bottom corners of red band -->
+<rect x="140" y="293" width="400" height="107" rx="12" fill="#C1272D"/>
+<rect x="140" y="293" width="400" height="67" rx="0" fill="#C1272D"/>
+
+<!-- Bridge structure — US colors -->
+<!-- Bridge deck (white stripe) -->
+<rect x="140" y="215" width="400" height="50" fill="#FFFFFF"/>
+
+<!-- Bridge arch (blue) -->
+<path d="M160 240 Q340 120 520 240" fill="none" stroke="#3C3B6E" stroke-width="8" stroke-linecap="round"/>
+
+<!-- Bridge cables/suspenders (red) -->
+<line x1="220" y1="207" x2="220" y2="240" stroke="#B22234" stroke-width="6" stroke-linecap="round"/>
+<line x1="280" y1="175" x2="280" y2="240" stroke="#B22234" stroke-width="6" stroke-linecap="round"/>
+<line x1="340" y1="162" x2="340" y2="240" stroke="#B22234" stroke-width="6" stroke-linecap="round"/>
+<line x1="400" y1="175" x2="400" y2="240" stroke="#B22234" stroke-width="6" stroke-linecap="round"/>
+<line x1="460" y1="207" x2="460" y2="240" stroke="#B22234" stroke-width="6" stroke-linecap="round"/>
+
+<!-- Bridge towers (blue) -->
+<rect x="162" y="196" width="22" height="64" rx="3" fill="#3C3B6E"/>
+<rect x="496" y="196" width="22" height="64" rx="3" fill="#3C3B6E"/>
+</svg>

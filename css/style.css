@@ -1,0 +1,397 @@
+/* Tiltas Partners — Site Styles
+   Built on ProofBound shared tokens (brand.proofbound.com/css/tokens.css)
+   Overrides use Tiltas brand colors where needed.
+*/
+
+/* Tiltas brand palette — Baltic blue-green tones */
+:root {
+    --tiltas-primary: #1a6b5a;
+    --tiltas-primary-dark: #134d41;
+    --tiltas-accent: #d4a843;
+    --tiltas-accent-dark: #b8922e;
+    --tiltas-hero-bg: #0f3d33;
+}
+
+/* Reset & Base */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-dark);
+    line-height: 1.6;
+    background: var(--white);
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    line-height: 1.2;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 var(--space-lg);
+}
+
+/* Header */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--bg-mid);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--tiltas-primary);
+    text-decoration: none;
+}
+
+.logo-accent {
+    font-weight: 400;
+    color: var(--tiltas-accent-dark);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.nav a {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav a:hover {
+    color: var(--tiltas-primary);
+}
+
+.nav-cta {
+    font-size: 0.85rem !important;
+    padding: 0.5rem 1.25rem !important;
+    color: var(--white) !important;
+}
+
+/* Language toggle */
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: none;
+    border: 1px solid var(--bg-mid);
+    border-radius: var(--radius-sm);
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.lang-toggle:hover {
+    border-color: var(--tiltas-primary);
+    color: var(--tiltas-primary);
+}
+
+.lang-flag {
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+/* Override shared CTA for Tiltas brand */
+.cta-button--primary {
+    background: linear-gradient(135deg, var(--tiltas-primary), var(--tiltas-primary-dark)) !important;
+}
+
+.cta-button--outline {
+    border-color: var(--tiltas-primary) !important;
+    color: var(--tiltas-primary) !important;
+}
+
+.cta-button--outline:hover {
+    background: var(--tiltas-primary) !important;
+    color: var(--white) !important;
+}
+
+/* Hero */
+.hero {
+    padding: 10rem 0 6rem;
+    background: linear-gradient(160deg, var(--tiltas-hero-bg) 0%, var(--tiltas-primary) 100%);
+    color: var(--white);
+    text-align: center;
+}
+
+.hero-tagline {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--tiltas-accent);
+    margin-bottom: var(--space-md);
+}
+
+.hero h1 {
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    margin-bottom: var(--space-lg);
+}
+
+.hero-sub {
+    font-size: 1.15rem;
+    max-width: 600px;
+    margin: 0 auto var(--space-xl);
+    opacity: 0.9;
+    line-height: 1.7;
+}
+
+.hero-cta {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: var(--space-xl);
+}
+
+.hero .cta-button--outline {
+    border-color: var(--white) !important;
+    color: var(--white) !important;
+}
+
+.hero .cta-button--outline:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+}
+
+.hero-lt {
+    font-size: 0.95rem;
+    opacity: 0.6;
+}
+
+/* Sections shared */
+section {
+    padding: var(--space-3xl) 0;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: var(--space-md);
+    color: var(--tiltas-hero-bg);
+}
+
+.section-sub {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto var(--space-2xl);
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+}
+
+/* Services / Tiers */
+.services {
+    background: var(--bg-light);
+}
+
+.tiers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+}
+
+.tier {
+    padding: var(--space-xl);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.tier:hover {
+    transform: translateY(-4px);
+}
+
+.tier--featured {
+    border: 2px solid var(--tiltas-primary);
+    position: relative;
+}
+
+.tier-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--tiltas-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.tier h3 {
+    font-size: 1.4rem;
+    margin-bottom: var(--space-sm);
+}
+
+.tier-price {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--tiltas-accent-dark);
+    margin-bottom: var(--space-lg);
+}
+
+.tier ul {
+    list-style: none;
+    text-align: left;
+}
+
+.tier li {
+    padding: var(--space-xs) 0;
+    border-bottom: 1px solid var(--bg-mid);
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.tier li:last-child {
+    border-bottom: none;
+}
+
+/* Sectors */
+.sector-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+}
+
+.sector {
+    padding: var(--space-xl);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.sector:hover {
+    transform: translateY(-4px);
+}
+
+.sector-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-md);
+}
+
+.sector h3 {
+    font-size: 1.2rem;
+    margin-bottom: var(--space-sm);
+}
+
+.sector p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+/* About */
+.about {
+    background: var(--bg-light);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+}
+
+.about-card {
+    padding: var(--space-xl);
+    text-align: center;
+}
+
+.about-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: var(--space-xs);
+}
+
+.about-role {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--tiltas-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-md);
+}
+
+.about-card p:last-child {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+/* Contact */
+.contact-info {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: var(--space-xl);
+    text-align: center;
+}
+
+.contact-info p {
+    margin-bottom: var(--space-sm);
+}
+
+.contact-info a {
+    color: var(--tiltas-primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.site-footer {
+    padding: var(--space-xl) 0;
+    text-align: center;
+    border-top: 1px solid var(--bg-mid);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tiers {
+        grid-template-columns: 1fr;
+    }
+
+    .sector-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav a:not(.nav-cta) {
+        display: none;
+    }
+
+    .hero {
+        padding: 8rem 0 4rem;
+    }
+}
