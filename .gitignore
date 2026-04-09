@@ -18,5 +18,20 @@ dist/
 .env
 .env.*
 
+# Cloudflare
+.wrangler/
+
+# Deploy scripts (may contain tokens)
+deploy.sh
+
+# Secrets & credentials
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+credentials*.json
+*secret*
+
 # Build artifacts
 *.log
