@@ -349,6 +349,14 @@ h2 {
     text-align: center;
 }
 
+.partner-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: var(--space-md);
+}
+
 .about-card h3 {
     font-size: 1.3rem;
     margin-bottom: var(--space-xs);

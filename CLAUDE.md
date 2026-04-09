@@ -13,10 +13,12 @@ Static website for Tiltas Partners, a boutique consultancy helping Lithuanian co
 - Uses ProofBound shared design tokens via CDN (`brand.proofbound.com/css/tokens.css`)
 - Color palette derived from logo: LT flag green/yellow/red + US navy
 
-## Repo
+## Hosting & Deployment
 
+- **Live site:** https://tiltasusa.com
+- **Cloudflare Pages:** tiltas.pages.dev (custom domain: tiltasusa.com)
+- **Deploy:** `wrangler pages deploy . --project-name tiltas --branch master`
 - **GitHub:** https://github.com/Proofbound/tiltas
-- **GitHub Pages:** https://proofbound.github.io/tiltas/
 - **Branch:** `master`
 
 ## Structure
